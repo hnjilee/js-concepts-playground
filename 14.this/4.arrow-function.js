@@ -16,4 +16,4 @@ const user = {
 };
 
 user.normal(); // Kim (this = 호출한 객체 user)
-user.arrow(); // undefined (this = user가 아니라 외부 this)
+user.arrow(); // undefined (this = user가 아니라 전역의 this)
