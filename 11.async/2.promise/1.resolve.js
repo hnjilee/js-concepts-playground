@@ -2,10 +2,11 @@
 // 작업의 상태를 나타냄: pending/fulfilled/rejected
 
 // resolve → 성공
+// resolve는 성공 상태로 만들고, then으로 성공을 처리한다.
 
 // Promise 생성
 const promise = new Promise(
-  // 비동기 작업이 완료되면 결과값(resolve의 인자)을 then에 전달함
+  // 비동기 작업이 성공하면 결과값(resolve의 인자)을 then에 전달함
   resolve => setTimeout(() => resolve('done'), 1000),
 );
 

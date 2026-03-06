@@ -1,4 +1,4 @@
-// async/await에서는 try/catch로 비동기 에러를 처리한다.
+// async/await에서는 try/catch로 비동기 에러를 처리한다
 
 function mockFetch(url) {
   return Promise.reject(new Error('failed to fetch'));

@@ -3,7 +3,7 @@
 ## 이 폴더의 목적
 
 시간이 걸리는 작업을 기다리는 동안에도 프로그램이 멈추지 않도록 하는 비동기 흐름을
-`setTimeout`, `Promise`, `async/await`로 단계적으로 확인한다.
+`setTimeout`, Promise, `async/await`로 단계적으로 확인한다.
 
 ## 구성
 
@@ -33,10 +33,10 @@
 
 ## 핵심 포인트
 
-- 비동기 작업은 결과가 “나중에” 도착하므로, then/await로 결과를 처리해야 한다.
-- Promise는 성공(resolve)과 실패(reject) 상태를 가지며, then/catch로 처리한다.
-- async/await는 가독성을 높이고, try/catch로 에러 흐름을 제어한다.
+- 비동기 작업은 결과가 “나중에” 도착하므로, 콜백이나 `then`/`await`로 결과를 처리해야 한다.
+- Promise는 성공(resolve)과 실패(reject) 상태를 가지며, 각각 `then`/`catch`로 처리한다.
+- `async/await`는 가독성을 높이고, `try/catch`로 에러 흐름을 제어한다.
 
 ## 한 문장 정리
 
-비동기는 작업 완료를 기다리지 않고 흐름을 이어가며, 결과는 Promise/await로 나중에 처리한다.
+비동기는 작업 완료를 기다리지 않고 흐름을 이어가며, 결과는 콜백이나 Promise로 나중에 처리한다.
